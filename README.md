@@ -2,7 +2,7 @@
 
 This repository contains an implementation of two classic reinforcement learning algorithms—**Q-Learning** and **SARSA**—applied to a maze environment using [gym-maze](https://github.com/MattChanTK/gym-maze). The implementation follows the formulations from *Artificial Intelligence: A Modern Approach (4th Edition)* by Peter Norvig and Stuart Russell.
 
-![Training Example](./assets/agent_training.gif)
+![Training Example](./assets/agent_training.gif)  
 *This is the agent being trained; learning the environment and the best actions gradually.*
 
 ## Overview
@@ -25,13 +25,13 @@ Q(s, a) \leftarrow Q(s, a) + \alpha \Big( r + \gamma \max_{a'} Q(s', a') - Q(s, 
 $$
 
 where:
-- $ s $ is the **current state**.
-- $ a $ is the **current action**.
-- $ r $ is the **reward** received.
-- $ s' $ is the **next state**.
-- $ \alpha $ is the **learning rate**.
-- $ \gamma $ is the **discount factor**.
-- $ \max_{a'} Q(s', a') $ is the **highest Q-value in the next state**.
+- $s$ is the **current state**.
+- $a$ is the **current action**.
+- $r$ is the **reward** received.
+- $s'$ is the **next state**.
+- $\alpha$ is the **learning rate**.
+- $\gamma$ is the **discount factor**.
+- $\max_{a'} Q(s', a')$ is the **highest Q-value in the next state**.
 
 Since **Q-Learning is off-policy**, it updates the Q-values using the best future reward estimate rather than following the current action-selection policy.
 
@@ -43,7 +43,7 @@ Q(s, a) \leftarrow Q(s, a) + \alpha \Big( r + \gamma Q(s', a') - Q(s, a) \Big)
 $$
 
 where:
-- $ a' $ is the **next action** selected by the policy.
+- $a'$ is the **next action** selected by the policy.
 
 Since **SARSA is on-policy**, it learns the Q-values based on the actual action taken, rather than assuming the best possible action.
 
@@ -124,7 +124,7 @@ You're provided with a file named `maze.ipynb`. Open this file and run the cells
 
 ## Contributors
 
-This project was developed as part of a group assignment for the Fundamentals of Artificial Intelligence course at the University of Isfahan, taught by Dr. Karshenas.
+This project was developed as part of a group assignment for Dr. Karshenas's Fundamentals of Artificial Intelligence course at the University of Isfahan.
 
 
 **Group Members:**  
